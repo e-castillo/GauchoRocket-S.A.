@@ -1,15 +1,16 @@
 <?php
-
+/*
 create database gauchoRocket;
 
 use gauchoRocket;
 
-Create Table Usuario (
+Create Table UsuarioModel (
     UsuarioId INT PRIMARY KEY AUTO_INCREMENT,
     Edad INT,
     Email Varchar(100) UNIQUE,
     Nombre Varchar(100),
     Apellido Varchar(100),
+    Pass varchar(100),
     Nivel INT,
     CodigoViajero INT UNIQUE
 );
@@ -51,3 +52,19 @@ Create Table Usuario (
     Nombre Varchar(50)
 );
 
+    Create Table vuelos(
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    Capacidad INT,
+    Duracion INT,
+    Escala varchar(50),
+    FechaDePartida date,
+    NombreEquipo varchar(50),
+    TipoVuelo varchar(50)
+);
+
+
+*/
+//--------------------------------------------------------
+/*
+ INSERT INTO vuelos (NombreEquipo) VALUES ("Juanito");
+ */
