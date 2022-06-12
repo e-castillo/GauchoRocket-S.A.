@@ -12,6 +12,11 @@ class VuelosModel {
     }
 
     public function buscarVuelos($nombre){
-        return $this->database->query("SELECT * FROM vuelos WHERE NombreEquipo = '$nombre'");
+        return $this->database->query("SELECT * FROM vuelosdisponibles WHERE circuito = '$nombre' OR dia = '$nombre' OR equipo = '$nombre' OR partida = '$nombre'");
     }
+
+    public function mostrarVuelo($variable){
+
+    }
+
 }
