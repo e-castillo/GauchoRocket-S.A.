@@ -68,3 +68,8 @@ Create Table UsuarioModel (
 /*
  INSERT INTO vuelos (NombreEquipo) VALUES ("Juanito");
  */
+
+/*
+INSERT INTO roles (rol) VALUES ("Interesados");
+INSERT INTO roles (rol) VALUES ("Administrador");
+INSERT INTO roles (rol) VALUES ("Cliente"); */

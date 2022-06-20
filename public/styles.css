@@ -97,6 +97,16 @@
 footer{
     margin-top: 300px;
 }
+
 #negro{
     background-color: black;
 }
+
+.contenedor-buscador{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    background-color: #033454;
+    color: aquamarine;
+}
+

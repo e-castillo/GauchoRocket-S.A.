@@ -1,7 +1,29 @@
 <?php
 session_start();
 
+
 include_once ("ConexionBdd.php");
+
+
+if(isset($_GET['cerrar_sesion'])){
+    session_unset();
+
+    session_destroy();
+}
+
+if(isset($_SESSION['rol'])){
+    switch ($_SESSION){
+        case 2:
+            header('location: AdminView.php');
+            break;
+
+        case 3:
+            header('location: HomeView.php');
+            break;
+
+        default: echo "Interesado";
+    }
+}
 
 $email = isset( $_POST["email"])?$_POST["email"] : "";
 $pass = isset( $_POST["pass"])?$_POST["pass"] : "";
